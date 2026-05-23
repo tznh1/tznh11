@@ -508,7 +508,7 @@ button:hover{
 </div>
 
 <audio id="bgMusic" loop>
-    <source src="data:audio/wav;base64,UklGRiYAAABXQVZFZm10IBAAAAABAAEAQB8AAAB9AAACABAAZGF0YQIAAAAAAA==" type="audio/wav">
+    <source src="https://files.freemusicarchive.org/storage/music/no_curator/Haruka_Nakamura/Haruka_Nakamura_-_Kalimba.mp3" type="audio/mpeg">
 </audio>
 
 <script>
@@ -571,7 +571,7 @@ function toggleMusic(){
         isPlaying = false;
     } else {
         audio.play().catch(function(error) {
-            console.log("الموسيقى معطلة حالياً");
+            console.log("خطأ في التشغيل:", error);
         });
         btn.innerText = "⏸️ إيقاف الموسيقى";
         isPlaying = true;
