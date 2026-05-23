@@ -507,8 +507,8 @@ button:hover{
 
 </div>
 
-<audio id="bgMusic" loop crossorigin="anonymous">
-    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+<audio id="bgMusic" loop>
+    <source src="data:audio/wav;base64,UklGRiYAAABXQVZFZm10IBAAAAABAAEAQB8AAAB9AAACABAAZGF0YQIAAAAAAA==" type="audio/wav">
 </audio>
 
 <script>
@@ -571,7 +571,7 @@ function toggleMusic(){
         isPlaying = false;
     } else {
         audio.play().catch(function(error) {
-            console.log("خطأ في التشغيل:", error);
+            console.log("الموسيقى معطلة حالياً");
         });
         btn.innerText = "⏸️ إيقاف الموسيقى";
         isPlaying = true;
